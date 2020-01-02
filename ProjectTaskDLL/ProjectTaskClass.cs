@@ -49,6 +49,24 @@ namespace ProjectTaskDLL
         FindProjectTasksForFootageDataSet aFindProjectTasksForFootageDataSet;
         FindProjectTasksForFootageDataSetTableAdapters.FindProjectTasksForFootageTableAdapter aFindProjectTasksForFootageTableAdapter;
 
+        FindCompanyFootagesDataSet aFindCompanyFootagesDataSet;
+        FindCompanyFootagesDataSetTableAdapters.FindCompanyFootagesTableAdapter aFindCompanyFootagesTableAdapter;
+
+        public FindCompanyFootagesDataSet FindCompanyFootages(DateTime datStartDate, DateTime datEndDate)
+        {
+            try
+            {
+                aFindCompanyFootagesDataSet = new FindCompanyFootagesDataSet();
+                aFindCompanyFootagesTableAdapter = new FindCompanyFootagesDataSetTableAdapters.FindCompanyFootagesTableAdapter();
+                aFindCompanyFootagesTableAdapter.Fill(aFindCompanyFootagesDataSet.FindCompanyFootages, datStartDate, datEndDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Task Class // Find Company Footages " + Ex.Message);
+            }
+
+            return aFindCompanyFootagesDataSet;
+        }
         public FindProjectTasksForFootageDataSet FindProjectTasksForFootage(int intWorkTaskID, DateTime datStartDate, DateTime datEndDate)
         {
             try

@@ -20,17 +20,17 @@ namespace ProjectTaskDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("FindMDUDropBuryHoursDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("FindCompanyFootagesDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class FindMDUDropBuryHoursDataSet : global::System.Data.DataSet {
+    public partial class FindCompanyFootagesDataSet : global::System.Data.DataSet {
         
-        private FindMDUDropBuryHoursDataTable tableFindMDUDropBuryHours;
+        private FindCompanyFootagesDataTable tableFindCompanyFootages;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public FindMDUDropBuryHoursDataSet() {
+        public FindCompanyFootagesDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ProjectTaskDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected FindMDUDropBuryHoursDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected FindCompanyFootagesDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ProjectTaskDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FindMDUDropBuryHours"] != null)) {
-                    base.Tables.Add(new FindMDUDropBuryHoursDataTable(ds.Tables["FindMDUDropBuryHours"]));
+                if ((ds.Tables["FindCompanyFootages"] != null)) {
+                    base.Tables.Add(new FindCompanyFootagesDataTable(ds.Tables["FindCompanyFootages"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ProjectTaskDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FindMDUDropBuryHoursDataTable FindMDUDropBuryHours {
+        public FindCompanyFootagesDataTable FindCompanyFootages {
             get {
-                return this.tableFindMDUDropBuryHours;
+                return this.tableFindCompanyFootages;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ProjectTaskDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            FindMDUDropBuryHoursDataSet cln = ((FindMDUDropBuryHoursDataSet)(base.Clone()));
+            FindCompanyFootagesDataSet cln = ((FindCompanyFootagesDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ProjectTaskDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FindMDUDropBuryHours"] != null)) {
-                    base.Tables.Add(new FindMDUDropBuryHoursDataTable(ds.Tables["FindMDUDropBuryHours"]));
+                if ((ds.Tables["FindCompanyFootages"] != null)) {
+                    base.Tables.Add(new FindCompanyFootagesDataTable(ds.Tables["FindCompanyFootages"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ProjectTaskDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFindMDUDropBuryHours = ((FindMDUDropBuryHoursDataTable)(base.Tables["FindMDUDropBuryHours"]));
+            this.tableFindCompanyFootages = ((FindCompanyFootagesDataTable)(base.Tables["FindCompanyFootages"]));
             if ((initTable == true)) {
-                if ((this.tableFindMDUDropBuryHours != null)) {
-                    this.tableFindMDUDropBuryHours.InitVars();
+                if ((this.tableFindCompanyFootages != null)) {
+                    this.tableFindCompanyFootages.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ProjectTaskDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "FindMDUDropBuryHoursDataSet";
+            this.DataSetName = "FindCompanyFootagesDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/FindMDUDropBuryHoursDataSet.xsd";
+            this.Namespace = "http://tempuri.org/FindCompanyFootagesDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFindMDUDropBuryHours = new FindMDUDropBuryHoursDataTable();
-            base.Tables.Add(this.tableFindMDUDropBuryHours);
+            this.tableFindCompanyFootages = new FindCompanyFootagesDataTable();
+            base.Tables.Add(this.tableFindCompanyFootages);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeFindMDUDropBuryHours() {
+        private bool ShouldSerializeFindCompanyFootages() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ProjectTaskDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            FindMDUDropBuryHoursDataSet ds = new FindMDUDropBuryHoursDataSet();
+            FindCompanyFootagesDataSet ds = new FindCompanyFootagesDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,37 +270,33 @@ namespace ProjectTaskDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void FindMDUDropBuryHoursRowChangeEventHandler(object sender, FindMDUDropBuryHoursRowChangeEvent e);
+        public delegate void FindCompanyFootagesRowChangeEventHandler(object sender, FindCompanyFootagesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FindMDUDropBuryHoursDataTable : global::System.Data.TypedTableBase<FindMDUDropBuryHoursRow> {
-            
-            private global::System.Data.DataColumn columnTransactionID;
-            
-            private global::System.Data.DataColumn columnTransactionDate;
-            
-            private global::System.Data.DataColumn columnFirstName;
-            
-            private global::System.Data.DataColumn columnLastName;
+        public partial class FindCompanyFootagesDataTable : global::System.Data.TypedTableBase<FindCompanyFootagesRow> {
             
             private global::System.Data.DataColumn columnAssignedProjectID;
             
+            private global::System.Data.DataColumn columnProjectID;
+            
             private global::System.Data.DataColumn columnProjectName;
+            
+            private global::System.Data.DataColumn columnWorkTaskID;
             
             private global::System.Data.DataColumn columnWorkTask;
             
-            private global::System.Data.DataColumn columnTotalHours;
+            private global::System.Data.DataColumn columnFootagePieces;
             
-            private global::System.Data.DataColumn columnTotalEmployeeCost;
+            private global::System.Data.DataColumn columnTotalCount;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursDataTable() {
-                this.TableName = "FindMDUDropBuryHours";
+            public FindCompanyFootagesDataTable() {
+                this.TableName = "FindCompanyFootages";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -308,7 +304,7 @@ namespace ProjectTaskDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal FindMDUDropBuryHoursDataTable(global::System.Data.DataTable table) {
+            internal FindCompanyFootagesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -325,41 +321,9 @@ namespace ProjectTaskDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected FindMDUDropBuryHoursDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FindCompanyFootagesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TransactionIDColumn {
-                get {
-                    return this.columnTransactionID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TransactionDateColumn {
-                get {
-                    return this.columnTransactionDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn FirstNameColumn {
-                get {
-                    return this.columnFirstName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn LastNameColumn {
-                get {
-                    return this.columnLastName;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -367,6 +331,14 @@ namespace ProjectTaskDLL {
             public global::System.Data.DataColumn AssignedProjectIDColumn {
                 get {
                     return this.columnAssignedProjectID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ProjectIDColumn {
+                get {
+                    return this.columnProjectID;
                 }
             }
             
@@ -380,6 +352,14 @@ namespace ProjectTaskDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn WorkTaskIDColumn {
+                get {
+                    return this.columnWorkTaskID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn WorkTaskColumn {
                 get {
                     return this.columnWorkTask;
@@ -388,17 +368,17 @@ namespace ProjectTaskDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TotalHoursColumn {
+            public global::System.Data.DataColumn FootagePiecesColumn {
                 get {
-                    return this.columnTotalHours;
+                    return this.columnFootagePieces;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TotalEmployeeCostColumn {
+            public global::System.Data.DataColumn TotalCountColumn {
                 get {
-                    return this.columnTotalEmployeeCost;
+                    return this.columnTotalCount;
                 }
             }
             
@@ -413,60 +393,51 @@ namespace ProjectTaskDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursRow this[int index] {
+            public FindCompanyFootagesRow this[int index] {
                 get {
-                    return ((FindMDUDropBuryHoursRow)(this.Rows[index]));
+                    return ((FindCompanyFootagesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindMDUDropBuryHoursRowChangeEventHandler FindMDUDropBuryHoursRowChanging;
+            public event FindCompanyFootagesRowChangeEventHandler FindCompanyFootagesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindMDUDropBuryHoursRowChangeEventHandler FindMDUDropBuryHoursRowChanged;
+            public event FindCompanyFootagesRowChangeEventHandler FindCompanyFootagesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindMDUDropBuryHoursRowChangeEventHandler FindMDUDropBuryHoursRowDeleting;
+            public event FindCompanyFootagesRowChangeEventHandler FindCompanyFootagesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event FindMDUDropBuryHoursRowChangeEventHandler FindMDUDropBuryHoursRowDeleted;
+            public event FindCompanyFootagesRowChangeEventHandler FindCompanyFootagesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddFindMDUDropBuryHoursRow(FindMDUDropBuryHoursRow row) {
+            public void AddFindCompanyFootagesRow(FindCompanyFootagesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursRow AddFindMDUDropBuryHoursRow(int TransactionID, System.DateTime TransactionDate, string FirstName, string LastName, string AssignedProjectID, string ProjectName, string WorkTask, decimal TotalHours, decimal TotalEmployeeCost) {
-                FindMDUDropBuryHoursRow rowFindMDUDropBuryHoursRow = ((FindMDUDropBuryHoursRow)(this.NewRow()));
+            public FindCompanyFootagesRow AddFindCompanyFootagesRow(string AssignedProjectID, int ProjectID, string ProjectName, int WorkTaskID, string WorkTask, decimal FootagePieces, int TotalCount) {
+                FindCompanyFootagesRow rowFindCompanyFootagesRow = ((FindCompanyFootagesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        TransactionID,
-                        TransactionDate,
-                        FirstName,
-                        LastName,
                         AssignedProjectID,
+                        ProjectID,
                         ProjectName,
+                        WorkTaskID,
                         WorkTask,
-                        TotalHours,
-                        TotalEmployeeCost};
-                rowFindMDUDropBuryHoursRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFindMDUDropBuryHoursRow);
-                return rowFindMDUDropBuryHoursRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursRow FindByTransactionID(int TransactionID) {
-                return ((FindMDUDropBuryHoursRow)(this.Rows.Find(new object[] {
-                            TransactionID})));
+                        FootagePieces,
+                        TotalCount};
+                rowFindCompanyFootagesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFindCompanyFootagesRow);
+                return rowFindCompanyFootagesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FindMDUDropBuryHoursDataTable cln = ((FindMDUDropBuryHoursDataTable)(base.Clone()));
+                FindCompanyFootagesDataTable cln = ((FindCompanyFootagesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -474,87 +445,74 @@ namespace ProjectTaskDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FindMDUDropBuryHoursDataTable();
+                return new FindCompanyFootagesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnTransactionID = base.Columns["TransactionID"];
-                this.columnTransactionDate = base.Columns["TransactionDate"];
-                this.columnFirstName = base.Columns["FirstName"];
-                this.columnLastName = base.Columns["LastName"];
                 this.columnAssignedProjectID = base.Columns["AssignedProjectID"];
+                this.columnProjectID = base.Columns["ProjectID"];
                 this.columnProjectName = base.Columns["ProjectName"];
+                this.columnWorkTaskID = base.Columns["WorkTaskID"];
                 this.columnWorkTask = base.Columns["WorkTask"];
-                this.columnTotalHours = base.Columns["TotalHours"];
-                this.columnTotalEmployeeCost = base.Columns["TotalEmployeeCost"];
+                this.columnFootagePieces = base.Columns["FootagePieces"];
+                this.columnTotalCount = base.Columns["TotalCount"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnTransactionID = new global::System.Data.DataColumn("TransactionID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionID);
-                this.columnTransactionDate = new global::System.Data.DataColumn("TransactionDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransactionDate);
-                this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFirstName);
-                this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLastName);
                 this.columnAssignedProjectID = new global::System.Data.DataColumn("AssignedProjectID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAssignedProjectID);
+                this.columnProjectID = new global::System.Data.DataColumn("ProjectID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProjectID);
                 this.columnProjectName = new global::System.Data.DataColumn("ProjectName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProjectName);
+                this.columnWorkTaskID = new global::System.Data.DataColumn("WorkTaskID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWorkTaskID);
                 this.columnWorkTask = new global::System.Data.DataColumn("WorkTask", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWorkTask);
-                this.columnTotalHours = new global::System.Data.DataColumn("TotalHours", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTotalHours);
-                this.columnTotalEmployeeCost = new global::System.Data.DataColumn("TotalEmployeeCost", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTotalEmployeeCost);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnTransactionID}, true));
-                this.columnTransactionID.AllowDBNull = false;
-                this.columnTransactionID.Unique = true;
-                this.columnTransactionDate.AllowDBNull = false;
-                this.columnFirstName.AllowDBNull = false;
-                this.columnFirstName.MaxLength = 2147483647;
-                this.columnLastName.AllowDBNull = false;
-                this.columnLastName.MaxLength = 2147483647;
+                this.columnFootagePieces = new global::System.Data.DataColumn("FootagePieces", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFootagePieces);
+                this.columnTotalCount = new global::System.Data.DataColumn("TotalCount", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalCount);
                 this.columnAssignedProjectID.AllowDBNull = false;
                 this.columnAssignedProjectID.MaxLength = 2147483647;
+                this.columnProjectID.AllowDBNull = false;
                 this.columnProjectName.AllowDBNull = false;
                 this.columnProjectName.MaxLength = 2147483647;
+                this.columnWorkTaskID.AllowDBNull = false;
                 this.columnWorkTask.AllowDBNull = false;
                 this.columnWorkTask.MaxLength = 2147483647;
-                this.columnTotalHours.AllowDBNull = false;
-                this.columnTotalEmployeeCost.ReadOnly = true;
+                this.columnFootagePieces.AllowDBNull = false;
+                this.columnTotalCount.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursRow NewFindMDUDropBuryHoursRow() {
-                return ((FindMDUDropBuryHoursRow)(this.NewRow()));
+            public FindCompanyFootagesRow NewFindCompanyFootagesRow() {
+                return ((FindCompanyFootagesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FindMDUDropBuryHoursRow(builder);
+                return new FindCompanyFootagesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FindMDUDropBuryHoursRow);
+                return typeof(FindCompanyFootagesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FindMDUDropBuryHoursRowChanged != null)) {
-                    this.FindMDUDropBuryHoursRowChanged(this, new FindMDUDropBuryHoursRowChangeEvent(((FindMDUDropBuryHoursRow)(e.Row)), e.Action));
+                if ((this.FindCompanyFootagesRowChanged != null)) {
+                    this.FindCompanyFootagesRowChanged(this, new FindCompanyFootagesRowChangeEvent(((FindCompanyFootagesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -562,8 +520,8 @@ namespace ProjectTaskDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FindMDUDropBuryHoursRowChanging != null)) {
-                    this.FindMDUDropBuryHoursRowChanging(this, new FindMDUDropBuryHoursRowChangeEvent(((FindMDUDropBuryHoursRow)(e.Row)), e.Action));
+                if ((this.FindCompanyFootagesRowChanging != null)) {
+                    this.FindCompanyFootagesRowChanging(this, new FindCompanyFootagesRowChangeEvent(((FindCompanyFootagesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -571,8 +529,8 @@ namespace ProjectTaskDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FindMDUDropBuryHoursRowDeleted != null)) {
-                    this.FindMDUDropBuryHoursRowDeleted(this, new FindMDUDropBuryHoursRowChangeEvent(((FindMDUDropBuryHoursRow)(e.Row)), e.Action));
+                if ((this.FindCompanyFootagesRowDeleted != null)) {
+                    this.FindCompanyFootagesRowDeleted(this, new FindCompanyFootagesRowChangeEvent(((FindCompanyFootagesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -580,14 +538,14 @@ namespace ProjectTaskDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FindMDUDropBuryHoursRowDeleting != null)) {
-                    this.FindMDUDropBuryHoursRowDeleting(this, new FindMDUDropBuryHoursRowChangeEvent(((FindMDUDropBuryHoursRow)(e.Row)), e.Action));
+                if ((this.FindCompanyFootagesRowDeleting != null)) {
+                    this.FindCompanyFootagesRowDeleting(this, new FindCompanyFootagesRowChangeEvent(((FindCompanyFootagesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveFindMDUDropBuryHoursRow(FindMDUDropBuryHoursRow row) {
+            public void RemoveFindCompanyFootagesRow(FindCompanyFootagesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -596,7 +554,7 @@ namespace ProjectTaskDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                FindMDUDropBuryHoursDataSet ds = new FindMDUDropBuryHoursDataSet();
+                FindCompanyFootagesDataSet ds = new FindCompanyFootagesDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -614,7 +572,7 @@ namespace ProjectTaskDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FindMDUDropBuryHoursDataTable";
+                attribute2.FixedValue = "FindCompanyFootagesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -658,69 +616,36 @@ namespace ProjectTaskDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FindMDUDropBuryHoursRow : global::System.Data.DataRow {
+        public partial class FindCompanyFootagesRow : global::System.Data.DataRow {
             
-            private FindMDUDropBuryHoursDataTable tableFindMDUDropBuryHours;
+            private FindCompanyFootagesDataTable tableFindCompanyFootages;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal FindMDUDropBuryHoursRow(global::System.Data.DataRowBuilder rb) : 
+            internal FindCompanyFootagesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFindMDUDropBuryHours = ((FindMDUDropBuryHoursDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int TransactionID {
-                get {
-                    return ((int)(this[this.tableFindMDUDropBuryHours.TransactionIDColumn]));
-                }
-                set {
-                    this[this.tableFindMDUDropBuryHours.TransactionIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime TransactionDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tableFindMDUDropBuryHours.TransactionDateColumn]));
-                }
-                set {
-                    this[this.tableFindMDUDropBuryHours.TransactionDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string FirstName {
-                get {
-                    return ((string)(this[this.tableFindMDUDropBuryHours.FirstNameColumn]));
-                }
-                set {
-                    this[this.tableFindMDUDropBuryHours.FirstNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string LastName {
-                get {
-                    return ((string)(this[this.tableFindMDUDropBuryHours.LastNameColumn]));
-                }
-                set {
-                    this[this.tableFindMDUDropBuryHours.LastNameColumn] = value;
-                }
+                this.tableFindCompanyFootages = ((FindCompanyFootagesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string AssignedProjectID {
                 get {
-                    return ((string)(this[this.tableFindMDUDropBuryHours.AssignedProjectIDColumn]));
+                    return ((string)(this[this.tableFindCompanyFootages.AssignedProjectIDColumn]));
                 }
                 set {
-                    this[this.tableFindMDUDropBuryHours.AssignedProjectIDColumn] = value;
+                    this[this.tableFindCompanyFootages.AssignedProjectIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ProjectID {
+                get {
+                    return ((int)(this[this.tableFindCompanyFootages.ProjectIDColumn]));
+                }
+                set {
+                    this[this.tableFindCompanyFootages.ProjectIDColumn] = value;
                 }
             }
             
@@ -728,10 +653,21 @@ namespace ProjectTaskDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string ProjectName {
                 get {
-                    return ((string)(this[this.tableFindMDUDropBuryHours.ProjectNameColumn]));
+                    return ((string)(this[this.tableFindCompanyFootages.ProjectNameColumn]));
                 }
                 set {
-                    this[this.tableFindMDUDropBuryHours.ProjectNameColumn] = value;
+                    this[this.tableFindCompanyFootages.ProjectNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int WorkTaskID {
+                get {
+                    return ((int)(this[this.tableFindCompanyFootages.WorkTaskIDColumn]));
+                }
+                set {
+                    this[this.tableFindCompanyFootages.WorkTaskIDColumn] = value;
                 }
             }
             
@@ -739,51 +675,50 @@ namespace ProjectTaskDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string WorkTask {
                 get {
-                    return ((string)(this[this.tableFindMDUDropBuryHours.WorkTaskColumn]));
+                    return ((string)(this[this.tableFindCompanyFootages.WorkTaskColumn]));
                 }
                 set {
-                    this[this.tableFindMDUDropBuryHours.WorkTaskColumn] = value;
+                    this[this.tableFindCompanyFootages.WorkTaskColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal TotalHours {
+            public decimal FootagePieces {
                 get {
-                    return ((decimal)(this[this.tableFindMDUDropBuryHours.TotalHoursColumn]));
+                    return ((decimal)(this[this.tableFindCompanyFootages.FootagePiecesColumn]));
                 }
                 set {
-                    this[this.tableFindMDUDropBuryHours.TotalHoursColumn] = value;
+                    this[this.tableFindCompanyFootages.FootagePiecesColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal TotalEmployeeCost {
+            public int TotalCount {
                 get {
                     try {
-                        return ((decimal)(this[this.tableFindMDUDropBuryHours.TotalEmployeeCostColumn]));
+                        return ((int)(this[this.tableFindCompanyFootages.TotalCountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TotalEmployeeCost\' in table \'FindMDUDropBuryHours\' is DBNul" +
-                                "l.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalCount\' in table \'FindCompanyFootages\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFindMDUDropBuryHours.TotalEmployeeCostColumn] = value;
+                    this[this.tableFindCompanyFootages.TotalCountColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTotalEmployeeCostNull() {
-                return this.IsNull(this.tableFindMDUDropBuryHours.TotalEmployeeCostColumn);
+            public bool IsTotalCountNull() {
+                return this.IsNull(this.tableFindCompanyFootages.TotalCountColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTotalEmployeeCostNull() {
-                this[this.tableFindMDUDropBuryHours.TotalEmployeeCostColumn] = global::System.Convert.DBNull;
+            public void SetTotalCountNull() {
+                this[this.tableFindCompanyFootages.TotalCountColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -791,22 +726,22 @@ namespace ProjectTaskDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class FindMDUDropBuryHoursRowChangeEvent : global::System.EventArgs {
+        public class FindCompanyFootagesRowChangeEvent : global::System.EventArgs {
             
-            private FindMDUDropBuryHoursRow eventRow;
+            private FindCompanyFootagesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursRowChangeEvent(FindMDUDropBuryHoursRow row, global::System.Data.DataRowAction action) {
+            public FindCompanyFootagesRowChangeEvent(FindCompanyFootagesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public FindMDUDropBuryHoursRow Row {
+            public FindCompanyFootagesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -822,7 +757,7 @@ namespace ProjectTaskDLL {
         }
     }
 }
-namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
+namespace ProjectTaskDLL.FindCompanyFootagesDataSetTableAdapters {
     
     
     /// <summary>
@@ -834,7 +769,7 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class FindMDUDropBuryHoursTableAdapter : global::System.ComponentModel.Component {
+    public partial class FindCompanyFootagesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -848,7 +783,7 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public FindMDUDropBuryHoursTableAdapter() {
+        public FindCompanyFootagesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -945,16 +880,14 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "FindMDUDropBuryHours";
-            tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
-            tableMapping.ColumnMappings.Add("TransactionDate", "TransactionDate");
-            tableMapping.ColumnMappings.Add("FirstName", "FirstName");
-            tableMapping.ColumnMappings.Add("LastName", "LastName");
+            tableMapping.DataSetTable = "FindCompanyFootages";
             tableMapping.ColumnMappings.Add("AssignedProjectID", "AssignedProjectID");
+            tableMapping.ColumnMappings.Add("ProjectID", "ProjectID");
             tableMapping.ColumnMappings.Add("ProjectName", "ProjectName");
+            tableMapping.ColumnMappings.Add("WorkTaskID", "WorkTaskID");
             tableMapping.ColumnMappings.Add("WorkTask", "WorkTask");
-            tableMapping.ColumnMappings.Add("TotalHours", "TotalHours");
-            tableMapping.ColumnMappings.Add("TotalEmployeeCost", "TotalEmployeeCost");
+            tableMapping.ColumnMappings.Add("FootagePieces", "FootagePieces");
+            tableMapping.ColumnMappings.Add("TotalCount", "TotalCount");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -971,37 +904,30 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.FindMDUDropBuryHours";
+            this._commandCollection[0].CommandText = "dbo.FindCompanyFootages";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@intProjectID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@datStartDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@datEndDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StartDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EndDate", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(FindMDUDropBuryHoursDataSet.FindMDUDropBuryHoursDataTable dataTable, global::System.Nullable<int> intProjectID, global::System.Nullable<global::System.DateTime> datStartDate, global::System.Nullable<global::System.DateTime> datEndDate) {
+        public virtual int Fill(FindCompanyFootagesDataSet.FindCompanyFootagesDataTable dataTable, global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((intProjectID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(intProjectID.Value));
+            if ((StartDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(StartDate.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((datStartDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(datStartDate.Value));
+            if ((EndDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(EndDate.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((datEndDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(datEndDate.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1014,27 +940,21 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FindMDUDropBuryHoursDataSet.FindMDUDropBuryHoursDataTable GetData(global::System.Nullable<int> intProjectID, global::System.Nullable<global::System.DateTime> datStartDate, global::System.Nullable<global::System.DateTime> datEndDate) {
+        public virtual FindCompanyFootagesDataSet.FindCompanyFootagesDataTable GetData(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((intProjectID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(intProjectID.Value));
+            if ((StartDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(StartDate.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((datStartDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(datStartDate.Value));
+            if ((EndDate.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(EndDate.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((datEndDate.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(datEndDate.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            FindMDUDropBuryHoursDataSet.FindMDUDropBuryHoursDataTable dataTable = new FindMDUDropBuryHoursDataSet.FindMDUDropBuryHoursDataTable();
+            FindCompanyFootagesDataSet.FindCompanyFootagesDataTable dataTable = new FindCompanyFootagesDataSet.FindCompanyFootagesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1108,7 +1028,7 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(FindMDUDropBuryHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(FindCompanyFootagesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1118,7 +1038,7 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(FindMDUDropBuryHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(FindCompanyFootagesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1128,7 +1048,7 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(FindMDUDropBuryHoursDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(FindCompanyFootagesDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1162,7 +1082,7 @@ namespace ProjectTaskDLL.FindMDUDropBuryHoursDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(FindMDUDropBuryHoursDataSet dataSet) {
+        public virtual int UpdateAll(FindCompanyFootagesDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
