@@ -52,6 +52,24 @@ namespace ProjectTaskDLL
         FindCompanyFootagesDataSet aFindCompanyFootagesDataSet;
         FindCompanyFootagesDataSetTableAdapters.FindCompanyFootagesTableAdapter aFindCompanyFootagesTableAdapter;
 
+        FindProjectTaskForProductivityReportDataSet aFindProjectTaskForProductivityReportDataSet;
+        FindProjectTaskForProductivityReportDataSetTableAdapters.FindProjectTaskForProductivityReportTableAdapter aFindProjectTaskForProductivityReportTableAdapter;
+
+        public FindProjectTaskForProductivityReportDataSet FindProjectTaskForProductivityReport(int intEmployeeID, int intProjectID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindProjectTaskForProductivityReportDataSet = new FindProjectTaskForProductivityReportDataSet();
+                aFindProjectTaskForProductivityReportTableAdapter = new FindProjectTaskForProductivityReportDataSetTableAdapters.FindProjectTaskForProductivityReportTableAdapter();
+                aFindProjectTaskForProductivityReportTableAdapter.Fill(aFindProjectTaskForProductivityReportDataSet.FindProjectTaskForProductivityReport, intEmployeeID, intProjectID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Task Class // Find Project Task For Productivity Report " + Ex.Message);
+            }
+
+            return aFindProjectTaskForProductivityReportDataSet;
+        }
         public FindCompanyFootagesDataSet FindCompanyFootages(DateTime datStartDate, DateTime datEndDate)
         {
             try
