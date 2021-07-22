@@ -54,6 +54,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindMDUDropBuryHoursDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProductionTaskForProductivityDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProductionTaskForProductivityDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProjectTaskByTaskIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -145,6 +150,17 @@
     </None>
     <None Include="FindMDUDropBuryHoursDataSet.xss">
       <DependentUpon>FindMDUDropBuryHoursDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductionTaskForProductivityDataSet.xsc">
+      <DependentUpon>FindProductionTaskForProductivityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProductionTaskForProductivityDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProductionTaskForProductivityDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProductionTaskForProductivityDataSet.xss">
+      <DependentUpon>FindProductionTaskForProductivityDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindProjectTaskByTaskIDDataSet.xsc">
       <DependentUpon>FindProjectTaskByTaskIDDataSet.xsd</DependentUpon>
