@@ -69,6 +69,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindProjectTaskForProductivityReportDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindProjectTaskForVoidingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindProjectTaskForVoidingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindProjectTaskHoursByAssignedProjectIDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -183,6 +188,17 @@
     </None>
     <None Include="FindProjectTaskForProductivityReportDataSet.xss">
       <DependentUpon>FindProjectTaskForProductivityReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectTaskForVoidingDataSet.xsc">
+      <DependentUpon>FindProjectTaskForVoidingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindProjectTaskForVoidingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindProjectTaskForVoidingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindProjectTaskForVoidingDataSet.xss">
+      <DependentUpon>FindProjectTaskForVoidingDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindProjectTaskHoursByAssignedProjectIDDataSet.xsc">
       <DependentUpon>FindProjectTaskHoursByAssignedProjectIDDataSet.xsd</DependentUpon>

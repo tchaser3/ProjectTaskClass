@@ -58,6 +58,24 @@ namespace ProjectTaskDLL
         FindProductionTaskForProductivityDataSet aFindProductionTaskForProductivityDataSet;
         FindProductionTaskForProductivityDataSetTableAdapters.FindProductionTaskForProductivityTableAdapter aFindProductionTaskForProductivityTableAdapter;
 
+        FindProjectTaskForVoidingDataSet aFindProjectTaskForVoidingDataSet;
+        FindProjectTaskForVoidingDataSetTableAdapters.FindProjectTaskForVoidingTableAdapter aFindProjectTaskForVoidingTableAdapter;
+
+        public FindProjectTaskForVoidingDataSet FindProjectTaskForVoiding(int intEmployeeID, DateTime datTransactionDate)
+        {
+            try
+            {
+                aFindProjectTaskForVoidingDataSet = new FindProjectTaskForVoidingDataSet();
+                aFindProjectTaskForVoidingTableAdapter = new FindProjectTaskForVoidingDataSetTableAdapters.FindProjectTaskForVoidingTableAdapter();
+                aFindProjectTaskForVoidingTableAdapter.Fill(aFindProjectTaskForVoidingDataSet.FindProjectTaskForVoiding, intEmployeeID, datTransactionDate);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Project Task Class // Find Project Task For Voiding " + Ex.Message);
+            }
+
+            return aFindProjectTaskForVoidingDataSet;
+        }
         public FindProductionTaskForProductivityDataSet FindProductionTaskForProductivity(int intEmployeeID)
         {
             try
